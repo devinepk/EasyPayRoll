@@ -2,6 +2,8 @@
 
 **A simple Powershell script that allows solopreneurs to run payroll in minutes instead of hours.**
 
+## Getting started
+
 1. Open the script and update your email address: $defaultemail = "[youremail@email.com]"
 
 2. Run the script.  It will set up the necessary folders.
@@ -26,7 +28,7 @@
 7. Run the script again.  It will ask you to confirm the information. Press Y to send the emails, press N kill the script and start over.
 
 
-# How to use the script regularly
+## How to use the script regularly
 
 1. Update your spreadsheet with the relevant information.
     
