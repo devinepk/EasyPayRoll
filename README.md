@@ -1,6 +1,6 @@
 # EasyPayRoll
 
-A simple Powershell script that allows solopreneurs to run payroll in minutes instead of hours.
+**A simple Powershell script that allows solopreneurs to run payroll in minutes instead of hours.**
 
 1. Open the script and update your email address: $defaultemail = "[youremail@email.com]"
 
