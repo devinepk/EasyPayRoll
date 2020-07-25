@@ -124,11 +124,12 @@ if ($decision -eq 'y')
             { 
                 $From = "philip@devineandcompany.com"
                 $To = $info.Email[$i]
+                $Bcc = "philip@devineandcompany.com"
                 $Subject = $info.name[$i] + ", here is your paystub for" + " $UpdatedName" + "." 
                 $Body = "Hi " + $info.name[$i] + ", here is your paystub information. Please keep this email for your records.`n" + "`n" + "Pay Period: " + $UpdatedName + "`n" + "Quantity: " + $info.Quantity[$i] + "`n" + "Pay Rate: " + $info.Rate[$i] + "`n" + "Extra: " + $info.Extra[$i] + "`n" + "Total Pay: " + $info.'Total Amount'[$i] + "`n" + "Notes: " + $info.Notes[$i] + "`n" + "`n" + "Let me know if you have any questions.  Thanks for your work! `n" + "`n" + "Best, `n" + "Philip"
                 $SMTPServer = "smtp-relay.gmail.com"
                 $SMTPPort = "587"
-                Send-MailMessage -From $From -to $To -Subject $Subject `
+                Send-MailMessage -From $From -to $To -Subject $Subject -Bcc $Bcc`
                 -Body $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl `
                 -Credential $Credentials
             }
